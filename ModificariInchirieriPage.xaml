@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect_Farcas_Gherghelas_mobil.ModificariInchirieriPage"
+             Title="ModificariInchirieriPage">
+
+    <ContentPage.Content>
+
+        <StackLayout Margin="20">
+            <Image Source="poza_partie.jpg"
+         SemanticProperties.Description="Inchirierile mele"
+            HeightRequest="64" />
+            <Label FontSize="22" VerticalOptions="End" />
+            <Button Text="Show On Map" 
+                    MaximumWidthRequest="200"
+                    Clicked="OnShowMapButtonClicked" />
+            <Label Text="Petrece mai mult timp pe partie, salvand timpul petrecut pentru inchirierea echipamentului!" />
+            <Editor Placeholder="Numele Punctului de inchiriere"
+            Text="{Binding Magazin}"
+            HeightRequest="100" />
+            <Editor Placeholder="Adresa de unde vei ridica echipamentul"
+            Text="{Binding Locatie}"
+            HeightRequest="100" />
+            <Editor Placeholder="Contact comerciant"
+            Text="{Binding Contact}"
+            HeightRequest="100" />
+            <Editor Placeholder="Partie"
+            Text="{Binding Partie}"
+            HeightRequest="100" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                   
+                </Grid.ColumnDefinitions>
+                <Button Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

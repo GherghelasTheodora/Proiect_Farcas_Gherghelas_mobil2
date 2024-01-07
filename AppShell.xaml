@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Proiect_Farcas_Gherghelas_mobil.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Proiect_Farcas_Gherghelas_mobil"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+            Title="Bine ai venit!"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Inchirierile mele"
+            ContentTemplate="{DataTemplate local:InchirieriListPage}"
+            Route="InchirieriListPage" />
+        <!--in IchirieriListPage o sa fie o lista cu toate inchirierile-->
+        <ShellContent
+            Title="Data si ora programarii" Icon="ceas.jpg"
+            ContentTemplate="{DataTemplate local:ProgramariPage}"
+            Route="ProgramariPage"
+            />
+        <!-- ProgramarePage sa se vada ori calendar, ori un ceas-->
+        <ShellContent
+            Title="Punct de inchiriere" Icon="inchirieri.jpg"
+            ContentTemplate="{DataTemplate local:InchirieriPage}"
+            Route="InchirieriPage"
+            />
+        <!-- in InchirieriPage o sa fie denumirea magazinului si locatia cu harta -->
+        <ShellContent
+            Title="Echipament" Icon="echipament.jpg"
+            ContentTemplate="{DataTemplate local:ProdusePage}"
+            Route="ProdusePage"
+            />
+
+
+    </TabBar>
+
+</Shell>

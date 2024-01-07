@@ -1,0 +1,12 @@
+
+# All files
+dotnet_code_quality.enable_platform_analyzer_on_pre_net5_target = true
+[*]
+indent_style = space
+dotnet_code_quality.enable_platform_analyzer_on_pre_net5_target = true
+
+# Xml files
+[*.xml]
+indent_size = 2
+dotnet_code_quality.enable_platform_analyzer_on_pre_net5_target = true
+
