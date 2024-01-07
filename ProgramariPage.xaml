@@ -6,7 +6,13 @@
     <ContentPage.Content>
         <StackLayout Spacing="10" Margin="10">
             <Button Text="Adauga Programare"
-                    Clicked="OnProgramareAddedClicked" />
+                     Clicked="OnProgramareAddedClicked"
+                     WidthRequest="200"
+                     HorizontalOptions="End"/>
+            <Image Source="poza_ceas2.jpg"
+                     SemanticProperties.Description="Programare"
+                     HeightRequest="150" 
+                     WidthRequest="350"/>
 
             <ListView x:Name="listView"
                       Margin="20"

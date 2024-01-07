@@ -64,12 +64,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="DetaliiInchirieriPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="InchirieriListPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="InchirieriPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

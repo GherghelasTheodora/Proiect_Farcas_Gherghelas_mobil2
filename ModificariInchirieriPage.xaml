@@ -5,15 +5,20 @@
              Title="ModificariInchirieriPage">
 
     <ContentPage.Content>
+        <ScrollView>
 
-        <StackLayout Margin="20">
-            <Image Source="poza_partie.jpg"
-         SemanticProperties.Description="Inchirierile mele"
-            HeightRequest="64" />
+            <StackLayout Margin="20">
+            <Button Text="Vezi unde trebuie sa ajungi"
+                     Clicked="OnShowMapButtonClicked"
+                     WidthRequest="350"
+                     HorizontalOptions="End"/>
+            <Image Source="poza_inchiriere.jpg"
+                SemanticProperties.Description="Puncte de Inchiriere"
+                 HeightRequest="220" 
+                WidthRequest="500"/>
             <Label FontSize="22" VerticalOptions="End" />
-            <Button Text="Show On Map" 
-                    MaximumWidthRequest="200"
-                    Clicked="OnShowMapButtonClicked" />
+            
+            
             <Label Text="Petrece mai mult timp pe partie, salvand timpul petrecut pentru inchirierea echipamentului!" />
             <Editor Placeholder="Numele Punctului de inchiriere"
             Text="{Binding Magazin}"
@@ -40,5 +45,7 @@
                     Clicked="OnDeleteButtonClicked" />
             </Grid>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>

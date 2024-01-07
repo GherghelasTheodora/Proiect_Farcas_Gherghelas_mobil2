@@ -7,8 +7,13 @@
     <ContentPage.Content>
         <StackLayout Spacing="10" Margin="10">
             <Button Text="Rezerva echipament"
-                Clicked="OnProdusAddedClicked" />
-
+                    Clicked="OnProdusAddedClicked"
+                    WidthRequest="200"
+                    HorizontalOptions="End"/>
+            <Image Source="poza_produse.jpg"
+                    SemanticProperties.Description="Echipament"
+                    HeightRequest="150" 
+                   WidthRequest="350"/>
             <ListView x:Name="listView"
                   Margin="20"
                   ItemSelected="OnListViewItemSelected">

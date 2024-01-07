@@ -7,12 +7,17 @@
    
     <ContentPage.Content>
         <StackLayout Spacing="10" Margin="10">
-            <Image Source="poza_partie.jpg"
-                    SemanticProperties.Description="Puncte de Inchiriere"
-                    HeightRequest="64" />
-            <Label FontSize="22" VerticalOptions="End" />
             <Button Text="Adauga Punct de Inchiriere"
-                Clicked="OnInchiriereAddedClicked" />
+                    Clicked="OnInchiriereAddedClicked"
+                    WidthRequest="350"
+                     HorizontalOptions="End"/>
+            <Image Source="poza_inchiriere.jpg"
+                    SemanticProperties.Description="Puncte de Inchiriere"
+                    HeightRequest="220" 
+                    WidthRequest="500"/>
+            
+            <Label FontSize="22" VerticalOptions="End" />
+           
 
             <ListView x:Name="listView"
                   Margin="20"

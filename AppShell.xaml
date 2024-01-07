@@ -11,11 +11,7 @@
             Title="Bine ai venit!"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
-        <ShellContent
-            Title="Inchirierile mele"
-            ContentTemplate="{DataTemplate local:InchirieriListPage}"
-            Route="InchirieriListPage" />
-        <!--in IchirieriListPage o sa fie o lista cu toate inchirierile-->
+        
         <ShellContent
             Title="Data si ora programarii" Icon="ceas.jpg"
             ContentTemplate="{DataTemplate local:ProgramariPage}"

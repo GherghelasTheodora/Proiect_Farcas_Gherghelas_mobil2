@@ -5,11 +5,16 @@
              Title="ModificariProgramarePage">
     <ContentPage.Content xmlns:local="clr-namespace:Proiect_Farcas_Gherghelas_mobil">
         <StackLayout Margin="20">
-            <Image Source="poza_partie.jpg"
-                SemanticProperties.Description="Inchirierile mele"
-                HeightRequest="64" />
+
             <Button Text="Trimite-mi Notificare"
-                    Clicked="OnNotificareButtonClicked" />
+                    Clicked="OnNotificareButtonClicked"
+                    WidthRequest="200"
+                     HorizontalOptions="End"/>
+            <Image Source="poza_ceas2.jpg"
+                    SemanticProperties.Description="Programare"
+                    HeightRequest="150" 
+                     WidthRequest="350"/>
+            
             <Label FontSize="22" VerticalOptions="End" />
             
             <Label Text="Data si ora de preluare a echipamentului" />

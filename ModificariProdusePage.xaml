@@ -9,6 +9,10 @@
 
     <StackLayout Margin="20">
             <Label Text="Detalii echipament" />
+            <Image Source="poza_produse.jpg"
+        SemanticProperties.Description="Echipament"
+        HeightRequest="150" 
+       WidthRequest="350"/>
             <Editor Placeholder="Echipamentul dorit"
         Text="{Binding TipProdus}"
         HeightRequest="100" />
